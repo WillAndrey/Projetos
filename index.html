@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Conversor Monetário</title>
+</head>
+<body>
+
+    <!--76c893-->
+
+    <h2>Conversor Monetário</h2>
+
+        <div class="corpo">
+
+       
+            <div class=first>
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" maxlength="10" required>
+            </div>
+      
+
+            <div class="corpo1">  
+
+                        <div class="second">
+                            <label for="ConverInicial">Converter de:</label>
+
+                                <input list="moedas" id="ConverInicial" required>
+                                    <datalist id="moedas">
+                                        <option value="Dolar (USD)">
+                                        <option value="Real (BRL)">
+                                        <option value="Iene (JPY)">      
+                                
+                                    </datalist>
+
+                        </div>      
+                        <img id="refresh" src="img/refresh.png" alt="Minha Figura">
+
+                                <div class="third">
+                                    <label for="Para">Para:</label>
+
+                                        <input list="moedas1" id="Para" required>
+                                            <datalist id="moedas1">
+                                                <option value="Dolar (USD)">
+                                                <option value="Real (BRL)">
+                                                <option value="Iene (JPY)">     
+                                
+                                            </datalist>
+                                 </div>           
+                                 
+
+             
+                                            
+            </div>     
+            
+            <div class="fourth">
+                <button type="submit" id="calcular"> Calcular!</button>
+
+                
+            </div>                               
+        
+        </div>
+          
+                   
+
+        
+    
+    
+</body>
+</html>
