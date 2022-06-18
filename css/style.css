@@ -38,8 +38,9 @@ h2 {
 
 }
 
-.corpo > .first {
+.corpo >form .first { 
     display: flex;
+    margin-bottom: 15px;
     font-family: monospace;
     font-size: 20px;
     color: white;
@@ -55,6 +56,17 @@ h2 {
     
 }
 
+.resultado {
+    display: flex;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    border-radius: 2px;
+    border-color:aliceblue;
+    border-style: solid;
+    
+}
+
 #refresh {
     width:40px;
     height: 40px;
@@ -63,6 +75,7 @@ h2 {
 
 #calcular {
     background-color: white;
+    width: 175px;
     border-radius: 2px;
     border-color:aliceblue;
     border-style: solid;
@@ -70,6 +83,7 @@ h2 {
     color: #76c893;
 
 }
+
 
 
 

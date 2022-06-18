@@ -16,10 +16,7 @@
         <div class="corpo">
 
        
-            <div class=first>
-                <label for="valor">Valor:</label>
-                <input type="text" id="valor" maxlength="10" required>
-            </div>
+           <!-- valor estava aki -->
       
 
             <div class="corpo1">  
@@ -29,9 +26,9 @@
 
                                 <input list="moedas" id="ConverInicial" required>
                                     <datalist id="moedas">
-                                        <option value="Dolar (USD)">
-                                        <option value="Real (BRL)">
-                                        <option value="Iene (JPY)">      
+                                        <option class="recebeMoedas" value="Dolar (USD)">
+                                        <option class="recebeMoedas" value="Real (BRL)">
+                                             
                                 
                                     </datalist>
 
@@ -43,9 +40,9 @@
 
                                         <input list="moedas1" id="Para" required>
                                             <datalist id="moedas1">
-                                                <option value="Dolar (USD)">
-                                                <option value="Real (BRL)">
-                                                <option value="Iene (JPY)">     
+                                                <option class="recebeMoedas1" value="Dolar (USD)">
+                                                <option class="recebeMoedas1" value="Real (BRL)">
+                                                    
                                 
                                             </datalist>
                                  </div>           
@@ -53,20 +50,24 @@
 
              
                                             
-            </div>     
-            
-            <div class="fourth">
-                <button type="submit" id="calcular"> Calcular!</button>
+            </div>    
 
-                
-            </div>                               
-        
+            <form action=""> 
+                <div class=first>
+                        <label for="valor">Valor:</label>
+                        <input type="text" id="valor" maxlength="25" placeholder="Digite o valor da  moeda a ser convertida" required>
+                 </div>
+            
+                        <div class="fourth">
+                                <button type="submit" id="calcular"> Calcular!</button>    
+                         </div>    
+            </form>                      
         </div>
           
                    
 
         
     
-    
+    <script src="script/script.js"></script>
 </body>
 </html>
