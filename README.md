@@ -1,3 +1,3 @@
-# Pasta onde vou colocar todos os meus projetos Frontend.
+# aqui você verá todos meus projetos Frontend.
 
 seja bem-vindo e aproveite!
