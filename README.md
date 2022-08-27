@@ -1,3 +1,3 @@
 # aqui você verá todos meus projetos Frontend.
 
-seja bem-vindo e aproveite!
+aqui você encontra-ra projetos com as tecnologias HTML, Css, Javascript entre outras.
