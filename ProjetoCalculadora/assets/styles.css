@@ -1,193 +1,70 @@
 * {
     font-family: 'Almarai', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    gap: 0;
 }
 
-html{
-    display: flex;
-    
+:root {
+  font-size: min(4.5vw, 6.4vh);
 }
 
-body{
-    
-    margin: auto;
-    
-    width: 100%;
-    height: 100%;
-    background-color: #d9d9d9;
+html {
+  min-width: 100%;
+  min-height: 100%;
 }
 
-h1 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+body {
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  background-color: #d9d9d9;
+}
+
+#visor {
+  width: 8.5rem;
+  height: 1.14rem;
+  margin-bottom: 0.7rem;
 }
 
 #main-calc {
     display: flex;
     margin: auto;
-    
+    padding: 1rem 0.1rem;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
-    width: 20vw;
-    height: 50vh;
+    /*align-content: center;*/
+    width: fit-content;
+    height: fit-content;
     border: 3px solid black;
     background-color: #3a86ff;
 }
 
-
-
-.row {
-    display: flex;
-    
+.invisible {
+  visibility: hidden;
 }
 
-.break {
-    flex-basis: 100%;
-    height: 0;
+.row, .row1 {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0.125rem auto;
 }
 
-
-
-#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #dot, #zero{
-    width: 70px;
-    height: 70px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 5px;
-    background-color: #ffdd00;
-    box-shadow: 3px 3px #495057;
-  
-    
+.row > input, .row1 > input {
+  font-size: 0.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #ffdd00;
 }
 
-#one:active, #two:active, #three:active, #four:active, #five:active, #six:active, #seven:active, #eight:active, #nine:active, #dot:active, #zero:active {
-    box-shadow: 0 3px #666;
-    transform: translateY(4px);
-  }
-
-#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #dot:hover, #zero:hover{
-    background-color: #f18701;
+.row input:last-child, .row1 input{
+  background: #0353a4;
+  color: white;
 }
 
-#zero{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 147px;
-}
-
-#clear, #division, #multiplication, #decrement, #addition, #equal {
-    width: 70px;
-    height: 70px;
-    font-size: 1.5rem;
-    margin: 5px;
-    background-color: #0353a4;
-    color: #fff;
-    box-shadow: 3px 3px #495057;
-}
-
-#clear:active, #division:active, #multiplication:active, #decrement:active, #addition:active, #equal:active {
-    transform: translateY(4px);
-}
-
-#clear:hover, #division:hover, #multiplication:hover, #decrement:hover, #addition:hover, #equal:hover {
-    background-color: #fdfffc;
-    color: black;
-
-}
-
-#visor {
-
-    background-color: #fff;
-    text-align:right;
-    padding-top: 5px;
-    width: 285px;
-    font-size:20px;
-    text-align: right;
-}
-
-
-.row1 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    
-    
-}
-
-#invisible {
-    color: #fff;
-    width: 70px;
-    height: 70px;
-    font-size: 1.5rem;
-    visibility: hidden;
-    margin: 2px;
-}
-
-
-
-@media (max-width: 1700px) {
-    #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #dot{
-        width: 60px;
-        height: 60px;
-    }
-
-    #clear, #division, #multiplication, #decrement, #addition, #equal{
-        width: 60px;
-        height: 60px;
-    }
-
-    #zero{
-        width: 125px;
-        height: 60px;
-        
-    }
-   
-}  
-
-@media (max-width: 1363px) {
-    #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #dot{
-        width: 45px;
-        height: 45px;
-        margin: 1px;
-    }
-
-    #invisible {
-        color: #fff;
-        width: 45px;
-        height: 45px;
-        font-size: 1.5rem;
-        visibility: hidden;
-        margin: 1px;
-    }
-
-    #zero{
-        width: 90px;
-        height: 45px;
-        margin: 1px;
-    }
-
-    #clear, #division, #multiplication, #decrement, #addition, #equal{
-        width: 45px;
-        height: 45px;
-        margin: 1px;
-    }
-}
-
-@media (max-width: 1580px) {
-    #main-calc{
-        width: 20vw;
-    }
-
-}
-
-
-
-@media (max-width: 500px) {
-    #main-calc{
-        width: 50vw;
-    }
-
+#zero {
+  width: 3.25rem;
 }
