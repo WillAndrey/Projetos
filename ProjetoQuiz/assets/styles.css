@@ -36,10 +36,34 @@ h2:nth-child(1){
      1px 0px 0px white;
 }
 
-h2:nth-child(2){
+.main > div:nth-child(2) h2{
     position: absolute;
     font-size: 2rem;
     color: green;
+    left: 12.5%;
+    text-align: center;
+    text-shadow: -1px -1px 0px white, 
+    -1px 1px 0px white,                    
+     1px -1px 0px white,                  
+     1px 0px 0px white;
+}
+
+.main > div:nth-child(3) h2 {
+    position: absolute;
+    font-size: 2rem;
+    color: purple;
+    left: 12.5%;
+    text-align: center;
+    text-shadow: -1px -1px 0px white, 
+    -1px 1px 0px white,                    
+     1px -1px 0px white,                  
+     1px 0px 0px white;
+}
+
+.main > div:nth-child(4) h2 {
+    position: absolute;
+    font-size: 2rem;
+    color: red;
     left: 12.5%;
     text-align: center;
     text-shadow: -1px -1px 0px white, 
@@ -73,34 +97,15 @@ img{
     
 }
 
-.quizChild1{
+.quizChildAll{
     width:20rem;
     height: 22.5rem;
     margin: 0.125rem;
     position: relative;
-    border: 3px solid blue;
+    border: 3px solid;
 }
 
-.quizChild2{
-    width:20rem;
-    height: 22.5rem;
-    margin: 0.125rem;
-    position: relative;
-    border: 3px solid green;
-}
-
-.quizChild3{
-    width:20rem;
-    height: 22.5rem;
-    margin: 0.125rem;
-    position: relative;
-    border: 3px solid purple;
-   
-}
-.quizChild4{
-    width:20rem;
-    height: 22.5rem;
-    margin: 0.125rem;
-    position: relative;
-    border: 3px solid red;
-}
+.quizChild1{ border-color: blue;}
+.quizChild2{border-color: green;}
+.quizChild3{ border-color: purple;}
+.quizChild4{ border-color: red;}
