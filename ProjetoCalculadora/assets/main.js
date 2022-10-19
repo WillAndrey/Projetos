@@ -64,7 +64,7 @@ const functionCalc = function(e) {
                 visor.value += '0'
               
             }if(e.target == dot) {
-                visor.value == '.'
+                visor.value == '...'
             } if(e.target == clear) {
                 visor.value = ''
                

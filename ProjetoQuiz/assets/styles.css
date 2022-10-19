@@ -1,0 +1,106 @@
+html{
+    min-width: 100%;
+    min-height: 100%;
+}
+body {
+    
+    margin: 0px;
+    background-color:#edf2f4;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+h1{
+    text-align: center;
+    margin: 1.5rem;
+    font-family: 'Gabriola';
+    font-size: 3.5rem;
+    color: #ffc300;
+    
+    text-shadow: -1px -1px 0px black, 
+    -1px 1px 0px black,                    
+     1px -1px 0px black,                  
+     1px 0px 0px black;
+}
+
+h2:nth-child(1){
+    position: absolute;
+    font-size: 2rem;
+    color: blue;
+    left: 12.5%;
+    text-align: center;
+    text-shadow: -1px -1px 0px white, 
+    -1px 1px 0px white,                    
+     1px -1px 0px white,                  
+     1px 0px 0px white;
+}
+
+h2:nth-child(2){
+    position: absolute;
+    font-size: 2rem;
+    color: green;
+    left: 12.5%;
+    text-align: center;
+    text-shadow: -1px -1px 0px white, 
+    -1px 1px 0px white,                    
+     1px -1px 0px white,                  
+     1px 0px 0px white;
+}
+
+
+
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-content: center;
+    border: 3px solid rgba(128,128,128, .3);
+}
+
+.quizChild{
+    width:20rem;
+    height: 22.5rem;
+    margin: 0.125rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.quizChild1{
+    width:20rem;
+    height: 22.5rem;
+    margin: 0.125rem;
+    position: relative;
+    border: 3px solid blue;
+}
+
+.quizChild2{
+    width:20rem;
+    height: 22.5rem;
+    margin: 0.125rem;
+    position: relative;
+    border: 3px solid green;
+}
+
+.quizChild3{
+    width:20rem;
+    height: 22.5rem;
+    margin: 0.125rem;
+    position: relative;
+    border: 3px solid purple;
+   
+}
+.quizChild4{
+    width:20rem;
+    height: 22.5rem;
+    margin: 0.125rem;
+    position: relative;
+    border: 3px solid red;
+}
