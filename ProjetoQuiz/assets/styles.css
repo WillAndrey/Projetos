@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html{
     min-width: 100%;
     min-height: 100%;
@@ -17,17 +18,15 @@ h1{
     font-family: 'Gabriola';
     font-size: 3.5rem;
     color: #ffc300;
-    
     text-shadow: -1px -1px 0px black, 
     -1px 1px 0px black,                    
      1px -1px 0px black,                  
      1px 0px 0px black;
 }
 
-h2:nth-child(1){
-    position: absolute;
+h2 {
     font-size: 2rem;
-    color: blue;
+    position: absolute;
     left: 12.5%;
     text-align: center;
     text-shadow: -1px -1px 0px white, 
@@ -36,40 +35,20 @@ h2:nth-child(1){
      1px 0px 0px white;
 }
 
-.main > div:nth-child(2) h2{
-    position: absolute;
-    font-size: 2rem;
+#games{
+    color: blue; 
+}
+
+#sports{
     color: green;
-    left: 12.5%;
-    text-align: center;
-    text-shadow: -1px -1px 0px white, 
-    -1px 1px 0px white,                    
-     1px -1px 0px white,                  
-     1px 0px 0px white;
 }
 
-.main > div:nth-child(3) h2 {
-    position: absolute;
-    font-size: 2rem;
+#series{
     color: purple;
-    left: 12.5%;
-    text-align: center;
-    text-shadow: -1px -1px 0px white, 
-    -1px 1px 0px white,                    
-     1px -1px 0px white,                  
-     1px 0px 0px white;
 }
 
-.main > div:nth-child(4) h2 {
-    position: absolute;
-    font-size: 2rem;
+#musics {
     color: red;
-    left: 12.5%;
-    text-align: center;
-    text-shadow: -1px -1px 0px white, 
-    -1px 1px 0px white,                    
-     1px -1px 0px white,                  
-     1px 0px 0px white;
 }
 
 
@@ -85,17 +64,13 @@ h2:nth-child(1){
     border: 3px solid rgba(128,128,128, .3);
 }
 
-.quizChild{
-    width:20rem;
-    height: 22.5rem;
-    margin: 0.125rem;
-}
+
 
 img{
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
 }
+
 
 .quizChildAll{
     width:20rem;
@@ -105,7 +80,8 @@ img{
     border: 3px solid;
 }
 
-.quizChild1{ border-color: blue;}
+.quizChild1{   border-color: blue;}
+
 .quizChild2{border-color: green;}
 .quizChild3{ border-color: purple;}
 .quizChild4{ border-color: red;}
