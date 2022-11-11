@@ -1,5 +1,6 @@
 @charset "UTF-8";
 html{
+    font-family: 'Poppins', sans-serif;
     min-width: 100%;
     min-height: 100%;
 }
@@ -10,6 +11,10 @@ body {
     min-width: 100%;
     min-height: 100%;
     
+}
+
+.link {
+    text-decoration: none;
 }
 
 h1{
@@ -36,19 +41,69 @@ h2 {
 }
 
 #games{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 5px;
     color: blue; 
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 12px;
+
+}
+
+#games:hover {
+    color: white;
+    background-color: blue;
+    border-color: white;
 }
 
 #sports{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 5px;
     color: green;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 12px;
+}
+
+#sports:hover {
+    color: white;
+    background-color: green;
+    border-color: white;
 }
 
 #series{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 5px;
     color: purple;
+    background-color: white;
+    border: 2px solid purple;
+    border-radius: 12px;
+}
+
+#series:hover {
+    color: white;
+    background-color: purple;
+    border-color: white;
 }
 
 #musics {
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 5px;
     color: red;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 12px;
+    
+}
+
+#musics:hover {
+    color: white;
+    background-color: red;
+    border-color: white;
 }
 
 .main {

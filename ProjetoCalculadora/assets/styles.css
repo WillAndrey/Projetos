@@ -23,7 +23,8 @@ body {
 }
 
 #visor {
-  width: 8.5rem;
+  width: 6.85rem;
+  font-size: 0.7rem;
   height: 1.14rem;
   margin-bottom: 0.7rem;
   text-align: right;
@@ -38,10 +39,11 @@ body {
     flex-direction: column;
     align-items: center;
     /*align-content: center;*/
-    width: fit-content;
+    width: 8rem;
     height: fit-content;
     border: 3px solid black;
     background-color: #3a86ff;
+
 }
 
 .invisible {
@@ -52,20 +54,39 @@ body {
   display: flex;
   gap: 0.25rem;
   margin: 0.125rem auto;
+  
 }
+
 
 .row > input, .row1 > input {
   font-size: 0.7rem;
   width: 1.5rem;
   height: 1.5rem;
+  box-shadow:5px 5px 1px #142c41;
   background: #ffdd00;
+
+
+  
+}
+
+.btn {
+  transition: 0.2s all;
+}
+
+.btn:active {
+  transform: translateY(5px);
+  box-shadow:0px;
 }
 
 .row input:last-child, .row1 input{
-  background: #0353a4;
+  background: #d7263d;
   color: white;
 }
 
 #zero {
   width: 3.25rem;
+}
+
+#clear, #division {
+  background: #0353a4;
 }
