@@ -47,8 +47,11 @@ body {
 }
 
 .teste {
-   background-color:  '#2b2d42';
+   background-color: #2b2d42;
+   
 }
+
+
 
 .listaitens > div {
     
@@ -61,6 +64,7 @@ body {
 
 #rightarrow {
     display: flex;
+    cursor: pointer;
     justify-content: center;
     border: 3px solid #FFF;
     text-align: center;

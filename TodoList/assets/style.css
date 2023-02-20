@@ -1,0 +1,87 @@
+html, body{
+    background-color: #d9c46a;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 1.355rem;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#title{
+    text-align: center;
+    font-family: "Bouncy PERSONAL USE ONLY", Arial;
+    color: #ae2012;
+    
+}
+
+
+main{
+    max-width: 70vw;
+    height: 80vh;
+    margin: 0 auto;
+    border: 5px solid #ae2012;
+    border-radius: 8px;
+}
+
+footer{
+    color: #ae2012;
+    text-align: center;
+}
+
+#firstdiv{
+    display: grid;
+    grid-template-rows:35px;
+    grid-template-columns: 95%;
+    grid-auto-rows: 35px;
+    margin: 5px;
+    border: 3px solid #ae2012;
+   
+}
+
+.novadiv{
+    display: grid;
+    cursor: pointer;
+    font-size: 0.95rem;
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    grid-auto-rows: 100%;
+    grid-column:span 2;
+    margin: 5px;
+    border: 3px solid #ae2012;
+    background-color: #fff;
+   
+}
+
+.classeDelete {
+    text-decoration: line-through;
+}
+
+
+#inputmain{
+    display: grid;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.roundedbtn{
+    width: 30px;
+    margin: 4px 2px;
+    color: #fff;
+    font-size: 1rem;
+    justify-self: center;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #8338ec;
+    border-radius: 50%;
+}
+
+.roundedbtn:hover{
+    background-color: #c8b6ff;
+    transition: 0.5;
+}
+
+
+  
