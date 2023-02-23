@@ -31,12 +31,18 @@ footer{
 
 #firstdiv{
     display: grid;
-    grid-template-rows:35px;
+    grid-template-rows:1.8rem;
     grid-template-columns: 95%;
     grid-auto-rows: 35px;
     margin: 5px;
     border: 3px solid #ae2012;
    
+}
+
+#inputmain{
+    display: grid;
+    margin: 5px;
+    font-size: 1rem;
 }
 
 .novadiv{
@@ -53,19 +59,12 @@ footer{
    
 }
 
-.classeDelete {
+.ClassDelete {
     text-decoration: line-through;
 }
 
-
-#inputmain{
-    display: grid;
-    padding: 5px;
-    font-size: 1rem;
-}
-
 .roundedbtn{
-    width: 30px;
+    width: fit-content;
     margin: 4px 2px;
     color: #fff;
     font-size: 1rem;
@@ -83,5 +82,34 @@ footer{
     transition: 0.5;
 }
 
+/* Media queries */
 
+@media only screen and (max-width: 900px) {
+    .firstdiv {
+      width: 60vw;
+    }
+
+    .roundedbtn{
+        width: fit-content;
+        height: 1.2rem;
+        margin: 5px 5px;
+        text-align: center;
+        align-self: center;
+        
+        font-size: 0.9rem;
+        border-radius: 70%;
+    }
+
+    .novadiv{
+        width: 92%;
+        grid-column: span 2;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .novadiv{
+        width: 87%;
+        grid-column: span 2;
+    }
+  }
   
