@@ -1,5 +1,6 @@
 const inputmain = document.getElementById('inputmain')
 const firstdiv = document.getElementById('firstdiv')
+const main = document.getElementById('main')
 let valorInput = 0
 valorInput = inputmain.value
 
@@ -8,16 +9,17 @@ valorInput = inputmain.value
 
 function criandoLinhas() {
 
-   var exemplo = document.createElement("div")
-   exemplo.innerText += inputmain.value
-   exemplo.classList.add('novadiv')
-   exemplo.setAttribute('onclick', 'adicionarRisco(this)')
+   var novadiv = document.createElement("div")
+   novadiv.innerText += inputmain.value
 
-   
-   firstdiv.appendChild(exemplo)
-   
+   if (novadiv.innerText === "" || null) {
+               return alert("Digite um valor válido!") // return para sair do fluxo da função.
+   }
+   novadiv.classList.add('novadiv')
+   novadiv.setAttribute('onclick', 'adicionarRisco(this)')
+   firstdiv.appendChild(novadiv)
 
-
+      inputmain.value = "" // limpar o valor do input toda vez que for adicionado um novo item.
 }
 
 //Marca a linha que deseja remover da lista.
@@ -26,8 +28,6 @@ function criandoLinhas() {
      elemento.classList.toggle('ClassDelete')
 
   }
-  
-  
 
 
 
