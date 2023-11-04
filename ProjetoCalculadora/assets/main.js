@@ -3,119 +3,72 @@ const visor = document.getElementById('visor')
 const main = document.getElementById('main-calc')
 
 // numerais
-const one = document.getElementById('one')
-const two = document.getElementById('two')
-const three = document.getElementById('three')
-const four = document.getElementById('four')
-const five = document.getElementById('five')
-const six = document.getElementById('six')
-const seven = document.getElementById('seven')
-const eight = document.getElementById('eight')
-const nine = document.getElementById('nine')
-const zero = document.getElementById('zero')
-const dot =  document.getElementById('dot')
+const numerais = document.querySelectorAll('.numerais')
 
-// operadores e clear
-const divisao = document.getElementById('division')
-const adicao = document.getElementById('addition')
-const mutiplicacao = document.getElementById('multiplication')
-const subtracao = document.getElementById('decrement')
-const igual = document.getElementById('equal')
+// operadores aritmeticos
+const operadores = document.querySelectorAll('.operadores')
+
+//clear
 const clear = document.getElementById('clear')
 
+//igual
+const igual = document.getElementById('equal');
 
-let firstValue 
-let op
+const dot = document.getElementById('dot')
 
-
-const functionCalc = function(e) {
-
-
-            if (e.target == one) {
-                
-                visor.value += '1'
-                
-            }if(e.target == two) {
-                visor.value += '2'
-                
-            }if(e.target == three) {
-                visor.value += '3'
-                
-            }if(e.target == four) {
-                visor.value += '4'
-                
-            }if(e.target == five) {
-                visor.value += '5'
-            
-            }if(e.target == six) {
-                visor.value += '6'
-                
-            }if(e.target == seven) {
-                visor.value += '7'
-            
-            }if(e.target == eight) {
-                visor.value += '8'
-               
-                
-            }if(e.target == nine) {
-                visor.value += '9'
-                
-            }if(e.target == zero) {
-                visor.value += '0'
-              
-            }if(e.target == dot) {
-                visor.value == '...'
-            } if(e.target == clear) {
-                visor.value = ''
-               
-            }
-            
-          
-
-                
+let firstValue = ''
+let op = ''
 
 
-                        if(e.target ==  adicao){
-                            op = 'adicao'
-                            firstValue = visor.value
-                            visor.value = null
-                        }   
-                        if(e.target == subtracao){
-                            op = 'subtracao'
-                            firstValue = visor.value
-                            visor.value = null
-                         
-                        }if(e.target == divisao){
-                            op= 'divisao'
-                            firstValue = visor.value
-                            visor.value = null
-                            
-                         
-                           
-                        }if(e.target == mutiplicacao){
-                            op = 'multiplicacao'
-                            firstValue = visor.value 
-                            visor.value = null
-                            
-                        }if (e.target == igual && op)  {
-                               if (op == 'adicao') {
-                                visor.value = Number(firstValue) + Number(visor.value)
-                                firstValue = visor.value
-                                op = ''
-                               } else if(op == 'multiplicacao'){
-                                visor.value = Number(firstValue) * Number(visor.value)
-                                firstValue = visor.value
-                                op = ''
-                               } else if(op == 'divisao') {
-                                visor.value = Number(firstValue) / Number(visor.value)
-                                firstValue = visor.value
-                                op = ''
-                               }else if(op == 'subtracao') {
-                                visor.value = Number(firstValue) - Number(visor.value)
-                                firstValue = visor.value
-                                op = ''
-                               }
-                        }
+const functionCalc = function(event) {
+
+
+   numerais.forEach(function(elemento) {
+        if(event.target == elemento) {
+            visor.value += elemento.value //funcionou
+        }if (event.target == clear) {
+            visor.value = ''
+        }if(event.target == dot) {
+            visor.value += '.'
+        }
+
+   })
+
+   operadores.forEach(function(elemento){
+    if (event.target == elemento) {
+        if (elemento.value === 'adicao') {
+          op = 'adicao'
+        } else if (elemento.value === 'subtracao') {
+          op = 'subtracao'
+        } else if (elemento.value === 'multiplicacao') {
+          op = 'multiplicacao'
+        } else if (elemento.value === 'divisao') {
+          op = 'divisao'
+        }
+        firstValue = visor.value
+        visor.value = null
+      }
+   })     
+
+   if (event.target == igual && op)  { //verificação caso o item clicado foi '=' e se a algum operador foi utilizado.
+    if (op == 'adicao') {
+     visor.value = Number(firstValue) + Number(visor.value)
+     firstValue = visor.value
+     op = ''
+    } else if(op == 'multiplicacao'){
+     visor.value = Number(firstValue) * Number(visor.value)
+     firstValue = visor.value
+     op = ''
+    } else if(op == 'divisao') {
+     visor.value = Number(firstValue) / Number(visor.value)
+     firstValue = visor.value
+     op = ''
+    }else if(op == 'subtracao') {
+     visor.value = Number(firstValue) - Number(visor.value)
+     firstValue = visor.value
+     op = ''
+    }
+}                 
 
                         
 }
