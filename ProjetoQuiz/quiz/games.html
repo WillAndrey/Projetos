@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Quiz</title>
+    <link rel="stylesheet" href="../assets/firstquiz.css">
+</head>
+<body>
+
+    <div class="gamesquiz">
+
+
+        <div class="itens cc">
+            
+            <div name="numeros" id="lt">1</div>
+            <div name="numeros" id="lt">2</div>
+            <div name="numeros" id="lt">3</div>
+            <div name="numeros" id="lt">4</div>
+            <div name="numeros" id="lt">5</div>
+            <div name="numeros" id="lt">6</div>
+            <div name="numeros" id="lt">7</div>
+            <div name="numeros" id="lt">8</div>
+            <div name="numeros" id="lt">9</div>
+            <div name="numeros" id="lt">10</div>
+            <img id="rightarrow" src="../assets/imgs/rightarrow.png" onclick="perguntaseRespostas(event)">
+            
+           
+        </div>
+        <div id="awaitclick"><img class="imgquiz" src="../assets/imgs/superhero.jpg"></div>
+        <div id="questions"><p id="perguntas">x?</p></div>
+        <div id="inputradios">
+          
+
+            <input type="radio" id="yes" name="option" value="Sim" checked>
+            <label for="yes">Sim</label><br>
+
+            <input type="radio" id="no" name="option" value="Não">
+            <label for="html">Não</label><br>
+        </div>
+    </div>
+    <script src="../assets/main.js"></script>
+</body>
+</html>

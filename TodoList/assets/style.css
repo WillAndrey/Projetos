@@ -1,0 +1,133 @@
+html, body{
+    background-color: #d9c46a;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 1.355rem;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#title{
+    text-align: center;
+    font-family: "Bouncy PERSONAL USE ONLY", Arial;
+    color: #ae2012;
+    
+}
+
+
+main{
+    max-width: 70vw;
+    height: 80vh;
+    margin: 0 auto;
+    border: 5px solid #ae2012;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+main::-webkit-scrollbar{
+    width: 6px;
+    color: black;
+
+
+}
+
+main::-webkit-scrollbar-thumb{
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 25%;
+}
+
+main::-webkit-scrollbar-track {
+    background-color: #d9c46a;
+}
+
+footer{
+    color: #ae2012;
+    text-align: center;
+}
+
+#firstdiv{
+    display: grid;
+    grid-template-rows:1.8rem;
+    grid-template-columns: 95%;
+    grid-auto-rows: 35px;
+    margin: 5px;
+    border: 3px solid #ae2012;
+   
+}
+
+#inputmain{
+    display: grid;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.novadiv{
+    display: grid;
+    cursor: pointer;
+    font-size: 0.95rem;
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    grid-auto-rows: 100%;
+    grid-column:span 2;
+    margin: 5px;
+    border: 3px solid #ae2012;
+    background-color: #fff;
+   
+}
+
+.ClassDelete {
+    text-decoration: line-through;
+}
+
+.roundedbtn{
+    width: fit-content;
+    margin: 4px 2px;
+    color: #fff;
+    font-size: 1rem;
+    justify-self: center;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #8338ec;
+    border-radius: 50%;
+}
+
+.roundedbtn:hover{
+    background-color: #c8b6ff;
+    transition: 0.5;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 900px) {
+    .firstdiv {
+      width: 60vw;
+    }
+
+    .roundedbtn{
+        width: fit-content;
+        height: 1.2rem;
+        margin: 5px 5px;
+        text-align: center;
+        align-self: center;
+        
+        font-size: 0.9rem;
+        border-radius: 70%;
+    }
+
+    .novadiv{
+        width: 92%;
+        grid-column: span 2;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .novadiv{
+        width: 87%;
+        grid-column: span 2;
+    }
+  }
+  

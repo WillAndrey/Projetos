@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor monetário</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor monetário</h1>
+    </header>
+
+    <main>
+        <label>Valor</label>
+        <input type="number" placeholder="0,00" id="valor">
+
+
+        <label>Converter de</label>
+        <input list="moedas1" name="moedas1" id="inputmoeda1">
+        <datalist id="moedas1">
+            <option value="Dollar (USD)"></option>
+            <option value="Real (BRL)"></option>
+            <option value="Euro (EUR)"></option>
+           <!-- <option value="Bitcoin (BTC)"></option>-->
+        </datalist>
+
+        <label>Para</label>
+        <input list="moedas2" name="moedas2" id="inputmoeda2">
+        <datalist id="moedas2">
+            <option value="Dollar (USD)"></option>
+            <option value="Real (BRL)"></option>
+            <option value="Euro (EUR)"></option>
+            <option value="Bitcoin (BTC)"></option>
+        </datalist>
+
+        <button>Converter</button>
+
+        <div id="resultado"></div>
+
+        
+
+    </main>
+
+
+    <footer></footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+html{
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 2.5rem;
+    font-family: Helvetica;
+}
+
+body {  
+    margin: 0px;
+    background-color:#edf2f4;
+    min-width: 100%;
+    min-height: 100%;  
+}
+
+.gamesquiz {
+    
+    margin: 1.5rem auto auto;
+    height: 20rem;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 53% 13% 25%;
+    border:3px solid #023047;
+}
+
+.itens{ /* DIV */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    background-color: #0077B6;
+    color: white;
+    
+}
+
+.itens > div {
+    display: flex;
+    justify-content: center;
+    border: 3px solid azure;
+    text-align: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.teste {
+   background-color: #2b2d42;
+   
+}
+
+
+
+.listaitens > div {
+    
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    text-align: center;
+
+}
+
+#rightarrow {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    border: 3px solid #FFF;
+    text-align: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+
+.gamesquiz > div {
+    border:3px solid #023047;
+}
+
+#inputradios {
+    background-color: #0077B6;
+    color: white;
+    padding-top: 5%;
+    font-size: 0.67rem;
+    text-align: center;
+}
+
+#questions  {
+    background-color: #0077B6;
+    color: white;
+    font-size: 0.6rem;
+}
+
+input, p {
+    
+    text-align: center;
+}
+
+
+.imgquiz{
+    width: 100%;
+    height: 10.45rem;
+}

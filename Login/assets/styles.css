@@ -1,0 +1,100 @@
+html{
+    display: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #adb5bd, white );
+    overflow: hidden;
+}
+
+
+
+#login-form{
+    align-content: center;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 12% repeat(4, 50px) 10px;
+    width: 500px;
+    height: 650px;
+    background: white;
+    -webkit-box-shadow: 1px 0px 21px 4px rgba(0,0,0,0.58);
+    box-shadow: 1px 0px 21px 4px rgba(0,0,0,0.58);
+    
+}
+#logo{
+    align-self: center;
+    font-family: 'Louis George Cafe';
+    font-size: 2.8rem !important;
+    color: #001219;
+}
+
+
+#logo, #user, #pass{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+}
+
+#user{
+    height: 40px;
+    width: 70%;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+#pass{
+    height: 40px;
+    width: 70%;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+#btn-login{
+    width: 30%;
+    font-size: 20px;
+    margin: 0 auto;
+    background: #1d3557;
+    color: white;
+    border-radius: 5px;
+}
+
+#btn-login:active{
+    transform: translateY(2px);
+}
+
+
+
+
+#signup{
+    width: 30%;
+    font-size: 20px;
+    margin: 0 auto;
+    background: #343a40;
+    border-radius: 5px;
+    color: white;
+    
+
+}
+
+#signup:active{
+    transform: translateY(2px);
+}
