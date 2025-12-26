@@ -38,7 +38,6 @@ body {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    /*align-content: center;*/
     width: 8rem;
     height: fit-content;
     border: 3px solid black;
@@ -46,8 +45,23 @@ body {
 
 }
 
-.invisible {
-  visibility: hidden;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#zero {
+  width: 3.25rem;
+}
+
+.clear {
+  background: #FF9500;
 }
 
 .row, .row1 {
@@ -57,36 +71,38 @@ body {
   
 }
 
+.row1{
+  display: flex;
+  width: 83%;
+  justify-content: flex-end;
+  margin: 0px;
+}
 
-.row > input, .row1 > input {
-  font-size: 0.7rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  box-shadow:5px 5px 1px #142c41;
+.row1 + input {
+   color: white;
+   background: #FF9500;
+}
+
+.row > input{
   background: #ffdd00;
-
-
-  
 }
 
 .btn {
+  font-size: 0.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 15%;
+  box-shadow:5px 5px 1px #142c41;
   transition: 0.2s all;
 }
 
 .btn:active {
+  box-shadow: none;
   transform: translateY(5px);
-  box-shadow:0px;
+  
 }
 
-.row input:last-child, .row1 input{
+.row input:last-child, .row1 input:last-child{
   background: #d7263d;
   color: white;
-}
-
-#zero {
-  width: 3.25rem;
-}
-
-#clear, #division {
-  background: #0353a4;
 }
